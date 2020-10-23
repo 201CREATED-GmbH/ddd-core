@@ -1,0 +1,38 @@
+{
+    "name": "201created/ddd-core",
+    "description": "DDD framework for PHP",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Christoph Hautzinger",
+            "email": "ch@201created.de"
+        },
+        {
+            "name": "Marko Vujnovic",
+            "email": "ms@201created.de"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "201created/support": "^0.1.2",
+        "ramsey/uuid": "^4.0",
+        "tightenco/collect": "^7.4",
+        "webmozart/assert": "^1.7"
+    },
+    "require-dev": {
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpunit/phpunit": "^9.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "C201\\Ddd\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "C201\\Ddd\\Tests\\": "tests/"
+        }
+    }
+}
